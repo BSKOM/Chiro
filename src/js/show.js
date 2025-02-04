@@ -1,4 +1,19 @@
 //show rev 1.0.0
+import relief from "./generator";
+// Example relief values for each point in the picture
+const relief = new Array(100 * 100).fill(0).map(() => Math.floor(Math.random() * 31));
+
+// Function to map relief value to color
+function getColorFromRelief(value) {
+    const ratio = value / 30;
+    const r = Math.floor(255 * ratio);
+    const g = Math.floor(255 * (1 - ratio));
+    const b = 0;
+    return { r, g, b };
+}
+
+// Create color array based on relief values
+const color = relief.map(value => getColorFromRelief(value));
 // Create a canvas element
 const canvas = document.createElement('canvas');
 canvas.width = 100;
