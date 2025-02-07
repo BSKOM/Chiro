@@ -1,10 +1,11 @@
-import conArr from "./generator";
+// import conArr from "./generator";
 import { drawCanvas } from "./show";
-const relief = conArr;
+// const relief = conArr;
+const profile = Array.from({ length: 10000 }, () => Math.floor(Math.random() * 31));
 
-console.log('Hello i m app.js');
+console.log('Hello I am app', profile.length);
 export default function App() {
-    drawCanvas(relief);
+    drawCanvas(profile);
 
     // return (
     //     <div>

@@ -33,7 +33,7 @@
 
 // getElementById('surface-map');
 const drawCanvas = function (relief) {
-    console.log('Hello i m drawCanvas');
+    console.log('Hello i m drawCanvas', 'relief lenght:', relief.length);
     const canvas = document.createElement('canvas');
     canvas.width = 100;
     canvas.height = 100;
@@ -52,7 +52,7 @@ const drawCanvas = function (relief) {
     for (let i = 0; i < 10000; i++) {
 
         ctx.fillStyle = `rgb(${arColor[i][0]},${arColor[i][1]},${arColor[i][2]})`;
-        ctx.fillRect(x=i%100, y=Math.trunc(i/100), 1, 1);
+        ctx.fillRect(i%100, Math.trunc(i/100), 1, 1);
     };
 };
 export { drawCanvas };
