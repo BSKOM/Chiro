@@ -15,3 +15,10 @@ img {
   width: 90vw;
   max-width: 256px;
 }
+
+input, button {
+  margin-top: 10px;
+  padding: 8px;
+  font-size: 16px;
+  cursor: pointer;
+}
