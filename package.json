@@ -9,5 +9,8 @@
   },
   "devDependencies": {
     "rss-scripts": "^0.2.4"
+  },
+  "dependencies": {
+    "@types/node": "^22.13.5"
   }
 }
